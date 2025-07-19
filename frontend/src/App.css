@@ -32,3 +32,27 @@
         transform: rotate(360deg);
     }
 }
+
+/* Custom styles for smooth transitions */
+* {
+    box-sizing: border-box;
+}
+
+.habit-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.habit-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Drag and drop visual feedback */
+.dragging {
+    opacity: 0.5;
+    transform: rotate(5deg);
+}
+
+.drop-zone {
+    border: 2px dashed #6366f1;
+    background-color: rgba(99, 102, 241, 0.05);
+}
